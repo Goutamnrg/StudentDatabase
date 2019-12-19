@@ -3,6 +3,8 @@ GO
 CREATE SCHEMA StudentDatabase;
 GO
 
+--CREATE TABLE
+
 CREATE TABLE StudentDatabase.Students (
 	StudentId int constraint PKconstrainrt Primary Key identity(1,1),
 	FirstName varchar (50),
@@ -15,6 +17,11 @@ CREATE TABLE StudentDatabase.Students (
 	EmailAddress varchar (70),
 	GraduationYear SMALLINT
 );
+
+ALTER TABLE StudentDatabase.Students
+ADD PostCode varchar(50);
+GO
+
 
 CREATE TABLE StudentDatabase.COURSE
 (
